@@ -253,6 +253,17 @@ li {
 .main .nameContainer .inherited a {
   color: #fff;
 }
+.main .nameContainer .overrides {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #666!important;
+  font-size: 0.7em;
+  padding: 2px 4px;
+  margin-right: 5px;
+}
+.main .nameContainer .overrides a {
+  color: #fff;
+}
 .main .nameContainer .tag-source {
   position: absolute;
   top: 17px;
