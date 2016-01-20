@@ -1,6 +1,6 @@
 {
   "name": "jaguarjs-jsdoc-patched-2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A patched version of JaguarJS-JSDoc, for JSDoc 3 with layout tweaks",
   "main": "Gruntfile.js",
   "dependencies": {

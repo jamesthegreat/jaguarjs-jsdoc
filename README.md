@@ -1,3 +1,6 @@
+Forked and added tweaks to the below patched jaguarjs module.  See original readme below:
+
+-------------------
 A patched version of [JaguarJS-JSDoc](https://github.com/davidshimjs/jaguarjs-jsdoc)
 ---
 JaguarJS-JSDoc is by far the most beautiful JSDoc theme in existence, but unfortuantely it's no longer maintained.
