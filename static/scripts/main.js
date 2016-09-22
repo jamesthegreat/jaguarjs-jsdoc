@@ -31,16 +31,24 @@ $(function () {
         return false;
     });
 
+    window.onhashchange = function() {
+        $('h4.selectedItem').removeClass('selectedItem');
+        var $title = $('h4[id="'+window.location.hash.substring(1)+'"]:eq(0)');
+        if ($title.length)
+            $title.addClass('selectedItem');
+    }
+
     // Show an item related a current documentation automatically
     var filename = $('.page-title').data('filename').replace(/\.[a-z]+$/, '').replace("-", ":").replace('_','/');
     var $currentItem = $('.navigation .item[data-name*="' + filename + '"]:eq(0)');
 
     if ($currentItem.length) {
-        $currentItem
-            .show()
-            .find('.itemMembers')
-                .show();
-    }
+    $currentItem.show().find('.itemMembers').show(); var $title =
+    $('h4[id="'+window.location.hash.substring(1)+'"]:eq(0)'); if
+    ($title.length) $title.addClass('selectedItem'); }
+
+    
+
 
     // Auto resizing on navigation
     var _onResize = function () {

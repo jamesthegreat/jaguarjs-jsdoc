@@ -1,7 +1,9 @@
 Forked jaguarjs-jsdoc-patched and added the following tweaks:
 
-v0.0.4
+v0.0.6
+Opened sub-menu on page load
 Fixed navigation issue where clicking on a module name would reload the page instead of opening the sub-menus
+Highlight method for easier finding when you click from nav
 
 v0.0.3
 Display overriden methods/members
