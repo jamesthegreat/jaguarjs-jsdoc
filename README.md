@@ -1,22 +1,29 @@
-Forked and added tweaks to the below patched jaguarjs module.  See original readme below:
+Forked jaguarjs-jsdoc-patched and added the following tweaks:
+
+v0.0.4
+Fixed navigation issue where clicking on a module name would reload the page instead of opening the sub-menus
+
+v0.0.3
+Display overriden methods/members
+Members display line number reference
+Navigation is alphabetical (for namespace grouping)
+Members with a type show up as properties
+Sort overriden/new methods & members before inherited ones
 
 -------------------
 A patched version of [JaguarJS-JSDoc](https://github.com/davidshimjs/jaguarjs-jsdoc)
 ---
-JaguarJS-JSDoc is by far the most beautiful JSDoc theme in existence, but unfortuantely it's no longer maintained.
-
-This patched version consists of every PR and every other patch I could find, all mashed together into one giant hideous amalgalm, all in the name of progress.  It seems to work.
 
 Usage
 ---
 1. Install from npm
   ```
-  $ npm install jaguarjs-jsdoc-patched --save-dev
+  $ npm install jaguarjs-jsdoc-patched-2 --save-dev
   ```
 
 2. Copy the `conf.json` file to the root directory of your repo.  Edit as necessary.
 
-3. Assuming you're using [grunt-jsdoc](https://github.com/krampstudio/grunt-jsdoc), set the template to `./node_modules/jaguarjs-jsdoc-patched`
+3. Assuming you're using [grunt-jsdoc](https://github.com/krampstudio/grunt-jsdoc), set the template to `./node_modules/jaguarjs-jsdoc-patched-2`
   ``` javascript
     grunt.initConfig({
       ..other grunt tasks here..
@@ -26,7 +33,7 @@ Usage
           options: {
             destination: 'docs',
             configure : "conf.json",
-            template: './node_modules/jaguarjs-jsdoc-patched'
+            template: './node_modules/jaguarjs-jsdoc-patched-2'
           }
         }
       }
