@@ -32,7 +32,7 @@ $(function () {
     });
 
     // Show an item related a current documentation automatically
-    var filename = $('.page-title').data('filename').replace(/\.[a-z]+$/, '').replace("-", ":");
+    var filename = $('.page-title').data('filename').replace(/\.[a-z]+$/, '').replace("-", ":").replace('_','/');
     var $currentItem = $('.navigation .item[data-name*="' + filename + '"]:eq(0)');
 
     if ($currentItem.length) {
